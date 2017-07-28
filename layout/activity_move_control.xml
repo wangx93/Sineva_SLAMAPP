@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tv_slam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动控制"
+            android:textSize="28sp"
+            android:textColor="#000"
+            android:layout_alignBottom="@+id/btn_return"
+            android:layout_centerHorizontal="true" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/tv_slam"/>
+
+        <Button
+            android:id="@+id/btn_guide_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始导览"
+            android:textSize="24sp"
+            android:layout_below="@+id/view"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_guide_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止导览"
+            android:textSize="24sp"
+            android:layout_below="@+id/view"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_welcome_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始迎宾"
+            android:textSize="24sp"
+            android:layout_below="@+id/btn_guide_start"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_welcome_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止迎宾"
+            android:textSize="24sp"
+            android:layout_below="@+id/btn_guide_start"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_tour_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始巡视"
+            android:textSize="24sp"
+            android:layout_below="@+id/btn_welcome_start"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_tour_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止巡视"
+            android:textSize="24sp"
+            android:layout_below="@+id/btn_welcome_start"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始充电"
+            android:textSize="24sp"
+            android:layout_below="@+id/btn_tour_start"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_single_move_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单点运动控制"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:layout_below="@+id/btn_charge"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/et_single_move_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入位置点"
+            android:layout_alignBaseline="@+id/tv_single_move_control"
+            android:layout_alignBottom="@+id/tv_single_move_control"
+            android:layout_toRightOf="@+id/tv_single_move_control"
+            android:layout_toEndOf="@+id/tv_single_move_control"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            android:textSize="24sp"
+            android:layout_alignBaseline="@+id/et_single_move_control"
+            android:layout_toRightOf="@+id/et_single_move_control"
+           />
+
+</RelativeLayout>
