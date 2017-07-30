@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_return"
+        android:layout_centerHorizontal="true"
+        android:text="基本设置"
+        android:textColor="#000"
+        android:textSize="28sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_guide"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorAccent" />
+
+    <CheckBox
+        android:id="@+id/cb_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="10dp"
+        android:text="打开语音对话"
+        android:textSize="26sp" />
+
+    <CheckBox
+        android:id="@+id/cb_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cb_voice"
+        android:layout_marginTop="10dp"
+        android:text="打开底座灯带"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tv_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_light"
+        android:text="选择机器人的行走速度"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_speed_slow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tv_speed"
+        android:layout_alignBottom="@+id/tv_speed"
+        android:layout_toRightOf="@+id/tv_speed"
+        android:text="慢"
+        android:textSize="17sp"
+        />
+
+    <Button
+        android:id="@+id/btn_speed_medium"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tv_speed"
+        android:layout_alignBottom="@+id/tv_speed"
+        android:layout_toRightOf="@+id/btn_speed_slow"
+        android:text="中"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_speed_fast"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tv_speed"
+        android:layout_alignBottom="@+id/tv_speed"
+        android:layout_toRightOf="@+id/btn_speed_medium"
+        android:text="快"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_slam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_speed"
+        android:text="SLAM模块"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_speed"
+        android:text="语音识别模块"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/btn_head_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_slam"
+        android:text="头部方向设置"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_slam"
+        android:text="关于我们"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:textColor="#000"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="#000"
+                android:textSize="22dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
